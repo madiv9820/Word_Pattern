@@ -1,0 +1,65 @@
+[
+  {
+    "title": "✅ The Perfect Match",
+    "input": {
+      "pattern": "abba",
+      "s": "dog cat cat dog"
+    },
+    "output": true,
+    "description": "A textbook example of a flawless two-way bijection. 🤝"
+  },
+  {
+    "title": "❌ The Cheating Letter",
+    "input": {
+      "pattern": "abba",
+      "s": "dog cat cat fish"
+    },
+    "output": false,
+    "description": "The letter 'a' breaks the rules by trying to map to both 'dog' and 'fish'. 🚫🐟"
+  },
+  {
+    "title": "❌ The Overlapping Words",
+    "input": {
+      "pattern": "aaaa",
+      "s": "dog cat cat dog"
+    },
+    "output": false,
+    "description": "Multiple different words try to claim the same letter 'a'. 🙅‍♂️🐾"
+  },
+  {
+    "title": "❌ The Length Mismatch",
+    "input": {
+      "pattern": "aba",
+      "s": "dog cat cat dog"
+    },
+    "output": false,
+    "description": "The pattern has 3 letters, but the string has 4 words—instant fail! 📏✂️"
+  },
+  {
+    "title": "✅ The Solo Act",
+    "input": {
+      "pattern": "a",
+      "s": "hello"
+    },
+    "output": true,
+    "description": "A single letter mapped to a single word is always a valid pattern. 🌟"
+  },
+  {
+    "title": "✅ The Unique Rainbow",
+    "input": {
+      "pattern": "abcdef",
+      "s": "red orange yellow green blue indigo"
+    },
+    "output": true,
+    "description": "Every letter is unique and every word is unique—a perfect rainbow mapping! 🌈"
+  },
+  {
+    "title": "❌ The Tricky Self-Map",
+    "input": {
+      "pattern": "abba",
+      "s": "dog dog dog dog"
+    },
+    "output": false,
+    "description": "Both 'a' and 'b' map to 'dog', violating the rule that no two letters can map to the same word. 🐕👯"
+  }
+]
